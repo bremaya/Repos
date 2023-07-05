@@ -12,7 +12,7 @@ Copy this code and paste in terminal:
 ```
 Coming Soon
 ```
-#Yandex Browser
+# Yandex Browser
 ```
 Coming Soon
 ```
