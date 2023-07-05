@@ -10,4 +10,5 @@ Copy this code and paste in terminal:
 ```
 # Microsoft Edge
 
+ 
 #Yandex Browser
