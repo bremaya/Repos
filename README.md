@@ -6,7 +6,7 @@ Copy this code and paste in terminal:
 ```
 # Google Chrome Oficial Repo and Trusted GPG Key
 ```
-. <(wget -qO- https://github.com/bremaya/Repos/raw/main/gcrepo.sh
+. <(wget -qO- https://github.com/bremaya/Repos/raw/main/gcrepo.sh)
 ```
 # Microsoft Edge
 ```
