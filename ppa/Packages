@@ -1,4 +1,19 @@
 Package: arios-automount
+Version: 1.0
+Architecture: all
+Maintainer: Hamid Azimy <hamid.azimy@gmail.com>
+Installed-Size: 38
+Depends: gvfs-bin
+Filename: ./arios-automount-1.0_all.deb
+Size: 1992
+MD5sum: 1e49604131b24e52011f8c4c39cfb2c0
+SHA1: 43fae50a1f03abf8973146e3c71d674982c1ff1f
+SHA256: 0c3bfe9da292518882d77436d4b38f7c143790e5b8d551f847d71833026f10e2
+Section: admin
+Priority: extra
+Description: Automatically mounts all local partiotions upon login in GNOME. It does that without touching /etc/fstab. Automount can be enabled/disabled from the Administration menu. Originally built for AriOS http://arioslinux.org.
+
+Package: arios-automount
 Version: 1.1
 Architecture: all
 Maintainer: Breno Maia (bremaya) <bremaya@gmail.com>
@@ -58,60 +73,245 @@ Section: admin
 Priority: extra
 Description: Automatically mounts all local partitions upon login in GNOME (Umount automatically when logout session is possible too). It does that without touching /etc/fstab. Automount can be enabled/disabled from the Administration menu. Originally built for AriOS http://arioslinux.org. Only works on Debian or derivates, especially created for use in Ubuntu x64 20.10 and +.
 
+Package: arios-automount
+Version: 1.5
+Architecture: all
+Maintainer: Breno Maia (bremaya) <bremaya@gmail.com>
+Installed-Size: 40
+Depends: gvfs
+Filename: ./arios-automount-1.5_all.deb
+Size: 2638
+MD5sum: add1be43f633e541a329985e40453915
+SHA1: 760ec94a02f575fd063e00900bfa3395ea080543
+SHA256: 1e643abbf934befba2fb4362e7eefe52fa03d46388e919a503aadb6baae546c8
+Section: admin
+Priority: extra
+Description: Automatically mounts all local partitions upon login in GNOME (Umount automatically when logout session is possible too). It does that without touching /etc/fstab. Automount can be enabled/disabled from the Administration menu. Originally built for AriOS http://arioslinux.org. Only works on Debian or derivates, especially created for use in Ubuntu x64 20.10 and +.
+
 Package: epsxe
-Version: 2.0.5-ubuntu2204-bremaya
+Version: 2.0.5
 Architecture: amd64
 Maintainer: ePSXe Team <www.epsxe.com> \ Breno Maia (bremaya) <bremaya@gmail.com>
-Installed-Size: ????
-Depends: libncurses5, libsdl1.2debian, libsdl-ttf2.0-0, libgssapi3-heimdal, libgtk-3-0
+Installed-Size: 3377
+Pre-Depends: libncurses5, libsdl1.2debian, libsdl-ttf2.0-0, libgssapi3-heimdal, libgtk-3-0, libssl1.0.0, libcurl3-bremaya, libldap-2.4-2
+Depends: libncurses5, libsdl1.2debian, libsdl-ttf2.0-0, libgssapi3-heimdal, libgtk-3-0, libssl1.0.0, libcurl3-bremaya, libldap-2.4-2
 Replaces: epsxe
-Provides: libssl1.0.0, libcurl3-7.58.0, libldap-2.4-2
-Filename: ./ePSXe_2.0.5_ by_bremaya.deb
-Size: 2685980
-MD5sum: 97b47e9cc7f428ff42db72d3fbd49300
-SHA1: 11b3ff938fe51c41de5c78e0007bf015b2dbf231
-SHA256: e27641bdd14cf69bb567e87555c114be2129db244713225fed40b383a703211a
+Filename: ./ePSXe_2.0.5-bremaya~1_amd64.deb
+Size: 1175644
+MD5sum: f859d9b145e9ce12f4b27082be730ca3
+SHA1: 62505971cc800766aceb2b407ba3861a3c80780b
+SHA256: 60a68bdb2076388088478e0351e9bcc9d35663d5bf0b09ed545eae9715439ef8
 Section: games
 Priority: optional
 Multi-Arch: same
 Homepage: https://github.com/bremaya/ePSXe-for-Ubuntu-Linux
 Description: ePSXe (enhanced PlayStation emulator)
  This package provides ePSXe (enhanced PlayStation emulator),
- with all dependencies for Ubuntu (tested in Ubuntu 22.04)
+ for Ubuntu (tested in Ubuntu 22.04)
 Original-Maintainer: Breno Maia (bremaya) <bremaya@gmail.com>
 
-Package: firefoxpwa
-Version: 2.6.2
+Package: lantern
+Version: 7.4.0
 Architecture: amd64
-Maintainer: filips <projects@filips.si>
-Installed-Size: 22204
-Depends: libc6 (>= 2.18)
-Recommends: firefox | firefox-esr | firefox-beta | firefox-trunk
-Enhances: firefox, firefox-esr, firefox-beta, firefox-trunk
-Filename: ./firefoxpwa_2.6.2_amd64.deb
-Size: 7436456
-MD5sum: 6ada5e05841ea7c8c377340330c14116
-SHA1: f6594b3a49e65fe048743a00275f631688c0c4f6
-SHA256: 3fe6f383adb86ac1b302cd17e7d85c51d7d23f38e82371db1cc2914b71432c56
-Section: web
+Maintainer: Lantern Team <team@getlantern.org>
+Installed-Size: 38909
+Filename: ./lantern-installer-64-bit.deb
+Size: 15003690
+MD5sum: 236908d33916e59d65626375bc03a3f7
+SHA1: fdcb8e64999007a6bab1ca40d8fbc95c72c85c10
+SHA256: 7996c1707b9b8550203fb1037960312fbab266b6e439684f3f1d6aaee27e5e4d
+Section: net
+Priority: extra
+Homepage: https://lantern.io
+Description: Censorship circumvention tool\nLantern allows you to access sites blocked by internet censorship.\nWhen you run it, Lantern reroutes traffic to selected domains through servers located where such domains are uncensored.
+License: Apache-2.0
+Vendor: Brave New Software Project, Inc
+
+Package: libcurl3-bremaya
+Source: curl3
+Version: 7.58.0-bremaya
+Architecture: amd64
+Maintainer: Breno Maia <bremaya@gmail.com>
+Installed-Size: 629
+Depends: libc6 (>= 2.17), libgssapi-krb5-2 (>= 1.14+dfsg), libidn2-0 (>= 0.6), libldap-2.4-2 (>= 2.4.7), libnghttp2-14 (>= 1.12.0), libpsl5 (>= 0.13.0), librtmp1 (>= 2.4+20131018.git79459a2-3~), libssl1.0.0 (>= 1.0.2~beta3), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+Filename: ./libcurl3_7.58.0-bremaya_amd64.deb
+Size: 230982
+MD5sum: b1bff2107697588989fd9973d490b05a
+SHA1: bbddeca8d0ef38db9705a2c3448a1057fbc70576
+SHA256: 99ec5818ddb99dd01bda50a5372a9da08c8470e24100eab1d0466b70f7bb0d65
+Section: libs
 Priority: optional
-Homepage: https://github.com/filips123/PWAsForFirefox
-Description: The native part of the PWAsForFirefox project
- Progressive Web Apps (PWAs) are web apps that use web APIs and features along
- with progressive enhancement strategy to bring a native app-like user
- experience to cross-platform web applications. Although Firefox supports many
- of Progressive Web App APIs, it does not support functionality to install them
- as a standalone system app with an app-like experience.
+Multi-Arch: same
+Homepage: http://curl.haxx.se
+Description: easy-to-use client-side URL transfer library (OpenSSL flavour)
+ libcurl is an easy-to-use client-side URL transfer library, supporting DICT,
+ FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S,
+ RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
  .
- This project creates a custom modified Firefox runtime to allow websites to be
- installed as standalone apps and provides a console tool and browser extension
- to install, manage and use them.
+ libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP
+ form based upload, proxies, cookies, user+password authentication (Basic,
+ Digest, NTLM, Negotiate, Kerberos), file transfer resume, http proxy tunneling
+ and more!
  .
- This package contains only the native part of the PWAsForFirefox project. You
- should also install the browser extension if you haven't already. You can
- download it from <https://addons.mozilla.org/firefox/addon/pwas-for-firefox/>.
-Vcs-Browser: https://github.com/filips123/PWAsForFirefox
-Vcs-Git: https://github.com/filips123/PWAsForFirefox
+ libcurl is free, thread-safe, IPv6 compatible, feature rich, well supported,
+ fast, thoroughly documented and is already used by many known, big and
+ successful companies and numerous applications.
+ .
+ SSL support is provided by OpenSSL.
+ .
+ Modded to work on ePSXe Patched by Breno Maia (bremaya)
+ .
+ https://github.com/bremaya
+Original-Maintainer: Alessandro Ghedini <ghedo@debian.org>
+
+Package: libcurl3-bremaya
+Source: curl3
+Version: 7.58.0-bremaya
+Architecture: i386
+Maintainer: Breno Maia <bremaya@gmail.com>
+Installed-Size: 688
+Depends: libc6 (>= 2.17), libgssapi-krb5-2 (>= 1.14+dfsg), libidn2-0 (>= 0.6), libldap-2.4-2 (>= 2.4.7), libnghttp2-14 (>= 1.12.0), libpsl5 (>= 0.13.0), librtmp1 (>= 2.4+20131018.git79459a2-3~), libssl1.0.0 (>= 1.0.2~beta3), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+Filename: ./libcurl3_7.58.0-bremaya_i386.deb
+Size: 258868
+MD5sum: 2f5db56df7d2b0e95515c00a2026cc62
+SHA1: 7f088ac2f414d7bae0c24b87eb00aefb77119ae3
+SHA256: 6d46cb30250d3227b4dcb4c8a9e657a94a976493bef49d3e58438b6a289a5cd4
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://curl.haxx.se
+Description: easy-to-use client-side URL transfer library (OpenSSL flavour)
+ libcurl is an easy-to-use client-side URL transfer library, supporting DICT,
+ FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S,
+ RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
+ .
+ libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP
+ form based upload, proxies, cookies, user+password authentication (Basic,
+ Digest, NTLM, Negotiate, Kerberos), file transfer resume, http proxy tunneling
+ and more!
+ .
+ libcurl is free, thread-safe, IPv6 compatible, feature rich, well supported,
+ fast, thoroughly documented and is already used by many known, big and
+ successful companies and numerous applications.
+ .
+ SSL support is provided by OpenSSL.
+ .
+ Modded to work on ePSXe Patched by Breno Maia (bremaya)
+ .
+ https://github.com/bremaya
+Original-Maintainer: Alessandro Ghedini <ghedo@debian.org>
+
+Package: libldap-2.4-2
+Source: openldap
+Version: 2.4.49+dfsg-2ubuntu1.9
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 523
+Depends: libc6 (>= 2.28), libgnutls30 (>= 3.6.12), libgssapi3-heimdal (>= 1.4.0+git20110226), libsasl2-2 (>= 2.1.27+dfsg), libldap-common
+Conflicts: ldap-utils (<= 2.1.23-1)
+Replaces: libldap-2.3-0, libldap2
+Filename: ./libldap-2.4-2_2.4.49+dfsg-2ubuntu1.9_amd64.deb
+Size: 154564
+MD5sum: 10344bb0d38b92a8786ba129606e5c35
+SHA1: 6b40db626063a4242074185a11232caa7b42fc2f
+SHA256: 245a7538c10c6ccef8ef8014bdb5d70114189be345a7002963be3f169979179e
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.openldap.org/
+Description: OpenLDAP libraries
+ These are the run-time libraries for the OpenLDAP (Lightweight Directory
+ Access Protocol) servers and clients.
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>
+
+Package: libldap-2.4-2
+Source: openldap
+Version: 2.4.49+dfsg-2ubuntu1.9
+Architecture: i386
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 561
+Depends: libc6 (>= 2.28), libgnutls30 (>= 3.6.12), libgssapi3-heimdal (>= 1.4.0+git20110226), libsasl2-2 (>= 2.1.27+dfsg), libldap-common
+Conflicts: ldap-utils (<= 2.1.23-1)
+Replaces: libldap-2.3-0, libldap2
+Filename: ./libldap-2.4-2_2.4.49+dfsg-2ubuntu1.9_i386.deb
+Size: 167760
+MD5sum: bf8892522be32adb55ef6e8d0a236e81
+SHA1: 8add9ebc640346f0f5101e333dcf1e9b92b8a524
+SHA256: 06ae2cb8a7a382ddae8b128b1c7d77ddab6920e7a1622ff1ac9883505b5752b6
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.openldap.org/
+Description: OpenLDAP libraries
+ These are the run-time libraries for the OpenLDAP (Lightweight Directory
+ Access Protocol) servers and clients.
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>
+
+Package: libssl1.0.0
+Source: openssl1.0
+Version: 1.0.2n-1ubuntu5.11
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 3419
+Depends: libc6 (>= 2.14), debconf (>= 0.5) | debconf-2.0
+Filename: ./libssl1.0.0_1.0.2n-1ubuntu5.11_amd64.deb
+Size: 1088564
+MD5sum: b2bb6367fe98c78e66b7507770e17243
+SHA1: 2718905ef189afd8c8642180773856451909222f
+SHA256: 14698f0e6413e45a779c97965f681f47db6854f7016ef81526da610b6ce655dc
+Section: libs
+Priority: important
+Multi-Arch: same
+Homepage: https://www.openssl.org
+Description: Secure Sockets Layer toolkit - shared libraries
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It provides the libssl and libcrypto shared libraries.
+Original-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+
+Package: libssl1.0.0
+Source: openssl1.0
+Version: 1.0.2n-1ubuntu5.11
+Architecture: i386
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 3085
+Depends: libc6 (>= 2.7), debconf (>= 0.5) | debconf-2.0
+Filename: ./libssl1.0.0_1.0.2n-1ubuntu5.11_i386.deb
+Size: 915144
+MD5sum: 4f48eda304e638406830a4b1224c60c1
+SHA1: 9841d0b09fa47895320da364c16018a39429efc6
+SHA256: 12782dbd70243ebf60f251aa4df9bbcbe56b0b1f2230be05a4668c69be86eeb6
+Section: libs
+Priority: important
+Multi-Arch: same
+Homepage: https://www.openssl.org
+Description: Secure Sockets Layer toolkit - shared libraries
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It provides the libssl and libcrypto shared libraries.
+Original-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+
+Package: net.downloadhelper.coapp
+Version: 1.6.3
+Architecture: amd64
+Maintainer: Michel Gutierrez <coapp@downloadhelper.net>
+Depends: libsdl2-2.0-0 (>= 2.0.0)
+Filename: ./net.downloadhelper.coapp-1.6.3-1_amd64.deb
+Size: 24349488
+MD5sum: 7501f95498e6882916703f00c75fb5f0
+SHA1: a68f19ef9a2321872dc43c58a466b4ac40f07e4e
+SHA256: d866b1ade5a24cf050810305f9be50f7a7848905322409922ad4d863d3a34756
+Section: base
+Priority: optional
+Homepage: https://github.com/mi-g/vdhcoapp
+Description: Video DownloadHelper companion app
+Installedsize: 100000
 
 Package: ocs-url
 Version: 3.1.0-0ubuntu1
@@ -128,4 +328,36 @@ Section: web
 Priority: optional
 Description: OCS-URL
  An install helper program for items served via OpenCollaborationServices (ocs://).
+
+Package: snes9x
+Version: 1.60-1
+Architecture: amd64
+Maintainer: BearOso (bearoso@gmail.com)
+Installed-Size: 6179
+Depends: libasound2 (>= 1.0.18), libc6 (>= 2.29), libcairo2 (>= 1.10.0), libepoxy0 (>= 1.5.2), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk-3-0 (>= 3.21.5), libminizip1 (>= 1.1), libpng16-16 (>= 1.6.2-1), libportaudio2 (>= 19+svn20101113), libpulse0 (>= 0.99.1), libsdl2-2.0-0 (>= 2.0.9), libstdc++6 (>= 5.2), libwayland-client0 (>= 1.9.91), libwayland-egl1 (>= 1.15.0), libx11-6, libxext6, libxrandr2 (>= 2:1.2.99.2), libxv1, zlib1g (>= 1:1.2.3.4)
+Filename: ./snes9x_1.60-1_amd64.deb
+Size: 1318676
+MD5sum: 3041146e50124d5ce99e39cebe02d860
+SHA1: 85295518b960e52be85a613c273e341dbddbed1b
+SHA256: ca9390d7f48b1846e7c4a7b6d0b3aaee8c6a24a18b4154887cd52aff70e322b1
+Section: misc
+Priority: optional
+Description: Super Nintendo Emulator
+ A Super Nintendo Emulator
+
+Package: snes9x
+Version: 1.62-3
+Architecture: amd64
+Maintainer: Breno Maia (bremaya) (bremaya@gmail.com) <https://github.com/bremaya>
+Installed-Size: 11518
+Depends: libasound2 (>= 1.0.18), libc6 (>= 2.29), libcairo2 (>= 1.10.0), libepoxy0 (>= 1.5.2), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk-3-0 (>= 3.21.5), libminizip1 (>= 1.1), libpng16-16 (>= 1.6.2-1), libportaudio2 (>= 19+svn20101113), libpulse0 (>= 0.99.1), libsdl2-2.0-0 (>= 2.0.9), libstdc++6 (>= 5.2), libwayland-client0 (>= 1.9.91), libwayland-egl1 (>= 1.15.0), libx11-6, libxext6, libxrandr2 (>= 2:1.2.99.2), libxv1, zlib1g (>= 1:1.2.3.4)
+Filename: ./snes9x_1.62-3-bremaya_amd64.deb
+Size: 1462058
+MD5sum: 962f20c10d0e1d858503defaae3cee01
+SHA1: 6d3c11da2898bd818a1324b57c2095ae5a7bf68f
+SHA256: db2ac3d28c926acba903d5d3b9eb2aaa5d3cc098a237cb0899eee278b5e34d9a
+Section: misc
+Priority: optional
+Description: Super Nintendo Emulator
+ A Super Nintendo Emulator
 
