@@ -6,6 +6,7 @@ read -p "Enter your PPA e-mail: " PPAEMAIL
 read -p "Enter the commit description: " COMMITDESC
 
 # Packages & Packages.gz
+cd ppa
 dpkg-scanpackages --multiversion . > Packages
 gzip -k -f Packages
 
