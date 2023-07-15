@@ -1,3 +1,7 @@
+# Install My Repository (Bremaya Repo)
+```
+. <(wget -qO- https://github.com/bremaya/Repos/raw/main/bremayarepo.sh)
+```
 All repositories are official and trusted GPG signed.
 Copy this code(s) and paste in terminal:
 # Free Download Manager Official Repo and Trusted GPG Key
