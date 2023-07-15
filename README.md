@@ -10,7 +10,7 @@ Copy this code(s) and paste in terminal:
 ```
 # Microsoft Edge Official Repo and Trusted GPG Key
 ```
-. <(wget -qO- https://github.com/bremaya/Repos/raw/main/merepo.sh)```
+. <(wget -qO- https://github.com/bremaya/Repos/raw/main/merepo.sh)
 ```
 # Yandex Browser Official Repo and Trusted GPG Key
 ```
