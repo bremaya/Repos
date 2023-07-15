@@ -10,7 +10,7 @@ Copy this code(s) and paste in terminal:
 ```
 # Microsoft Edge
 ```
-Coming Soon
+. <(wget -qO- https://github.com/bremaya/Repos/raw/main/merepo.sh)```
 ```
 # Yandex Browser
 ```
