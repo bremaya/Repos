@@ -14,5 +14,5 @@ Copy this code(s) and paste in terminal:
 ```
 # Yandex Browser Official Repo and Trusted GPG Key
 ```
-Coming Soon
+. <(wget -qO- https://github.com/bremaya/Repos/raw/main/yxrepo.sh)
 ```
