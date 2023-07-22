@@ -352,10 +352,10 @@ Maintainer: Breno Maia (bremaya) (bremaya@gmail.com) <https://github.com/bremaya
 Installed-Size: 11518
 Depends: libasound2 (>= 1.0.18), libc6 (>= 2.29), libcairo2 (>= 1.10.0), libepoxy0 (>= 1.5.2), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk-3-0 (>= 3.21.5), libminizip1 (>= 1.1), libpng16-16 (>= 1.6.2-1), libportaudio2 (>= 19+svn20101113), libpulse0 (>= 0.99.1), libsdl2-2.0-0 (>= 2.0.9), libstdc++6 (>= 5.2), libwayland-client0 (>= 1.9.91), libwayland-egl1 (>= 1.15.0), libx11-6, libxext6, libxrandr2 (>= 2:1.2.99.2), libxv1, zlib1g (>= 1:1.2.3.4)
 Filename: ./snes9x_1.62-3-bremaya_amd64.deb
-Size: 3201522
-MD5sum: f82f99435f70fcabd50dcd485e9c50e2
-SHA1: 1a3e3257aac14f8853c05eaf2d9eded6f74e9617
-SHA256: 2d06668bf4f05fba955fc902493c254df0469c78f2d86bddd2678382a3b979cb
+Size: 4128536
+MD5sum: 45122976922af8aa07ea4d89992682ca
+SHA1: 7fa698220dc9e9e7a4fa57dfae34b884b205064d
+SHA256: 06917722722ff508f4ae9e1ee399e3d59b441dcc215930adffeed8216bcc6658
 Section: misc
 Priority: optional
 Description: Super Nintendo Emulator
